@@ -1,0 +1,13 @@
+sample:
+  name: Hello World Shell
+  description: A simple hello world application with shell support
+common:
+  tags: shell console
+  integration_platforms:
+    - native_posix
+    - qemu_x86
+  harness: console
+  harness_config:
+    type: one_line
+    regex:
+      - "Hello World!"
