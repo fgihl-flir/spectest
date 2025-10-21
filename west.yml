@@ -16,4 +16,4 @@ manifest:
 
   # Mark this repository as the application
   self:
-    path: .
+    path: spectest
