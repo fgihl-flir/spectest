@@ -15,6 +15,18 @@ This is a freestanding Zephyr application that demonstrates:
 - West build tool
 - CMake 3.20.0 or higher
 
+## Setup
+
+This is a Zephyr freestanding application using Zephyr 4.2. To set up the workspace:
+
+```bash
+# Initialize west with this repository as the manifest
+west init -l .
+
+# Update all dependencies
+west update
+```
+
 ## Building
 
 To build the application for a specific board (e.g., qemu_x86):
@@ -58,6 +70,7 @@ world
 
 ## Project Structure
 
+- `west.yml` - West manifest file for Zephyr 4.2 freestanding application
 - `CMakeLists.txt` - Build configuration
 - `prj.conf` - Zephyr project configuration (enables shell)
 - `src/main.c` - Main application with shell command implementation
