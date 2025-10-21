@@ -1,0 +1,19 @@
+# west.yml for spectest - A Zephyr 4.2 freestanding application
+manifest:
+  version: "0.13"
+
+  # Define the remote repositories
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  # Define the projects to include
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: v4.2.0
+      import: true
+
+  # Mark this repository as the application
+  self:
+    path: .
